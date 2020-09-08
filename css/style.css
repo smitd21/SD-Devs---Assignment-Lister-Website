@@ -1,0 +1,660 @@
+
+/*Font Awesome free icons*/
+@import url("https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+/*Google Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@500;700;900&display=swap');
+/*Google Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+
+*{
+	margin:0;
+	padding: 0;
+	box-sizing: border-box;
+	outline: none;
+	text-decoration: none;
+}
+body{
+	margin: 0;
+	line-height: 1.5;
+	font-size: 16px;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 400;
+}
+.navbar{
+	display: flex;
+	align-items: center;
+	padding: 20px;
+}
+nav{
+	flex: 1;
+	text-align: right;
+}
+nav ul{
+	display: inline-block;
+	list-style: none;
+}
+nav ul li{
+	display: inline-block;
+	margin-right: 20px;
+}
+.nav li a{
+	font-size: 16px;
+	font-weight: 600;
+	color: #302e4d;
+	text-decoration: none;
+	line-height: 45px;
+	display: block;
+	border-bottom: 1px solid #e8dfec;
+	--webkit-transition: all 0.3s ease;   /*Hovering Effect*/
+	transition: all 0.3s ease;
+	text-transform: capitalize;
+}
+.nav li a:not(.active):hover{
+	padding-left: 5px;  /*It'll pad or move right thoda while hovered*/
+}
+.nav li a .fa{
+	margin-right: 5px;
+}
+a{
+	text-decoration: none;
+	color:  #302e4d;
+}
+p{
+	color: #302e4d;;
+}
+.shadow-dark{          /*Image ke circle ke baahr shadow*/
+	-webkit-box-shadow:0 0 20px rgba(48,46,77,0.15);
+	box-shadow: 0 0 20px rgba(48,46,77,0.15);
+}
+
+/* Dropdown Button */
+.dropbtn{
+  color: #302e4d;
+  padding: auto 16px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  color: #302e4d;
+  text-decoration: none;
+  line-height: 45px;
+  display: block;
+  border-bottom: 1px solid #e8dfec;
+  --webkit-transition: all 0.3s ease;   /*Hovering Effect*/
+  transition: all 0.3s ease;
+  text-transform: capitalize;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+.fa-list{
+	margin-right: 5px;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: whitesmoke
+  min-width: 160px;
+  box-shadow: #5F9EA0;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color:  #302e4d;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  border-radius: 30px;
+}
+
+.dropdown-content a:hover {color: #ffffff;}
+
+
+.dropdown:hover .dropdown-content {display: block;padding-top: 5px;}
+
+
+.dropdown:hover .dropbtn {background-color:transparent;}
+
+
+
+/*Highlighting & Hovering in Pink*/
+.logo{
+	padding: 30px 0;
+}
+.logo a{
+	font-size: 40px;
+	color: #302e4d;;
+	font-family: 'Rubik', sans-serif;
+	font-weight: 700;
+	text-decoration: none;
+	display: inline-block;
+	position: relative;
+	padding: 0 10px;
+	line-height: 50px;
+}
+
+.logo a::before{
+	border-top: 4px solid #ec1839;
+	border-left: 4px solid #ec1839;
+} 
+.logo a::after{
+	border-right: 4px solid #ec1839;
+	border-bottom: 4px solid #ec1839;
+}
+.container{
+	max-width: 1300px;
+	margin: auto;
+	padding-left: 25px;
+	padding-right: 25px;
+
+}
+.row{
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+.col-2{
+	flex-basis: 50%;
+	min-width: 300px;
+}
+.col-2 img{
+	max-width: 100%;
+	padding: 50px 0;
+}
+.col-2 h1{
+	font-size: 50px;
+	line-height: 60px;
+	margin: 25px 0;
+	color:  #302e4d;
+}
+.header{
+	height: 100%;
+	background-color: #f2f2fc;
+}
+.header .row{
+	margin-top: 70px;
+}
+
+
+::before,::after{
+	box-sizing: border-box;
+}
+
+.logo a::before{
+	content: '';
+	height: 20px;
+	width: 20px;
+	position: absolute; 
+	top: 0;
+	left: 0;
+}
+
+.logo a::after{
+	content: '';
+	height: 20px;
+	width: 20px;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+}
+
+.section{
+	background-color:  #f2f2fc;
+	min-height: 100vh;
+	display: block;
+	z-index: 0;
+	opacity: 1;
+	-webkit-transition: all 0.3s ease;     /*Transition will be done 0.3s*/
+	transition: all 0.3s ease;
+}
+.section .container{
+	padding-top: 60px;
+	padding-bottom: 70px;
+}
+.section-title{
+	-ms-flex: 0 0 100%;
+	flex: 0 0 100%;
+	max-width: 100%;
+	margin-bottom: 60px;
+}
+.section-title h2{
+	font-size: 40px;
+	color: #302e4d;
+	font-family: 'Rubik', sans-serif;
+	font-weight: 700;
+	margin: 0;
+	/*background-color: gray;*/
+	position: relative;
+}
+.section-title h2::before{
+	content: '';
+	height: 4px;
+	width: 50px;
+	position: absolute;
+	top: 100%;
+	left: 0;
+}
+.section-title h2::after{
+	content: '';
+	height: 4px;
+	width: 25px;
+	position: absolute;
+	top: 100%;
+	left: 0;
+	margin-top: 8px;
+}
+.row{
+	display: -ms-flex;
+	display: flex;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	margin-right: -15px;
+	margin-left: -15px;
+}
+.shadow-dark{          /*Image ke circle ke baahr shadow*/
+	-webkit-box-shadow:0 0 20px rgba(48,46,77,0.15);
+	box-shadow: 0 0 20px rgba(48,46,77,0.15);
+}
+.btn{                           /*Unique Whole button*/        
+	font-size: 16px;
+	font-family: 'Rubik', sans-serif;
+	padding: 8px 30px;
+	margin: 30px 0;
+	font-weight: 500;
+	padding: 12px 35px;
+	color: #ffffff;
+	border-radius: 40px;
+	-webkit-transition: all 0.3s ease; /*Hovering Effect*/
+	transition: all 0.3s ease;
+	display: inline-block;
+	white-space: nowrap;
+	border: none;
+	cursor: pointer;
+}
+.btn:hover{
+	-webkit-transform: scale(1.05);       /*Unique Hover*/
+	transform: scale(1.05);
+}
+
+
+/*Assignments Section Start*/
+.portfolio .container{
+	padding-bottom: 40px;          /*Heading ke niche ka padding always 70-40 rkhne kaa*/
+}
+.portfolio .portfolio-filter{
+	-ms-flex: 0 0 100%;
+	flex: 100%;
+	max-width: 100%;
+	text-align: center;
+	margin-bottom: 40px;
+}
+
+.portfolio .portfolio-filter button{
+	border:none;
+	background-color: transparent;
+	font-size: 18px;
+	font-weight: 700;
+	text-transform: capitalize;
+	margin: 0 10px;
+	color: #302e4d;
+	cursor: pointer;   /*Unique Change the cursor to finger pointer*/
+	border-bottom: 2px solid transparent;
+	white-space: nowrap;
+	padding-bottom: 2px;
+	-webkit-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+}
+
+.portfolio .portfolio-item{
+	flex:0 0 33.33%;
+	max-width: 33.33%;
+	margin-bottom:30px;
+	padding-right: 30px;
+}
+
+/*Portfolio Filter*/
+.portfolio .portfolio-item.hide{        /*To hide the portfolio images we dont want*/
+	display: none;
+}
+.portfolio .portfolio-item.show{        /*To show the portfolio images we want*/
+	display: block;
+	animation: showItem 0.5s ease;
+}
+
+
+@-webkit-keyframes showItem{
+	0%{
+		-webkit-transform: scale(0.8);
+		transform: scale(0.8);
+		opacity: 0; 
+	}
+	100%{
+		-webkit-transform: scale(1);
+		transform: scale(1);
+		opacity: 1;
+	}
+}
+
+@keyframes showItem{
+	0%{
+		-webkit-transform: scale(0.8);
+		transform: scale(0.8);
+		opacity: 0; 
+	}
+	100%{
+		-webkit-transform: scale(1);
+		transform: scale(1);
+		opacity: 1;
+	}
+}
+
+.portfolio .portfolio-item-inner{          /*This is also the css of Portfolio images only.*/
+	border: 6px solid #fdf9ff;
+	border-radius: 10px;
+	overflow: hidden;
+	cursor: pointer;
+	position: relative;
+}
+.portfolio .portfolio-item-inner .portfolio-img img{
+	width: 100%;
+	display: block;
+}
+/*Unique Hovers*/
+.portfolio .portfolio-item .portfolio-info{
+	position: absolute;
+	left: 0;
+	top: 0;
+	background-color: rgb(0,0,0,0.8);     /*Thoda light dark*/
+	height: 100%;
+	width: 100%;
+	z-index: 1;
+	padding: 30px; 
+	-webkit-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+	opacity: 0;
+}
+.portfolio .portfolio-item-inner:hover .portfolio-info{
+	opacity: 1;
+}
+.portfolio .portfolio-item .portfolio-info h4{
+	font-size: 18px;
+	font-weight: 700;
+	color: #ffffff;
+	text-transform: capitalize;
+	-webkit-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+	-webkit-transform: translateX(-20px);     /*Coming From Left*/
+	transform: translateX(-20px);             /*''''*/    
+	opacity: 0;                               /*First Disappear*/                         
+}
+.portfolio .portfolio-item-inner:hover .portfolio-info h4{
+	opacity: 1;
+	-webkit-transform: translateX(0px);            /*Disappear while not hvered & come from left while hovered*/
+	transform: translateX(0px);
+}
+.portfolio .portfolio-item .portfolio-info .icon{
+	height: 40px;
+	width: 44px;
+	background-color: #ffffff;
+	text-align: center;
+	border-radius: 50%;
+	position: absolute;
+	right: 30px;
+	bottom: 30px;
+	opacity: 0;
+	-webkit-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+	-webkit-transform: translateX(20px);           /*Move little left from right while hovered*/
+	transform: translateX(20px);
+}
+.portfolio .portfolio-item-inner:hover .portfolio-info .icon{
+	opacity: 1;
+	-webkit-transform: translateX(0px);                /*Move little left from right while hovered*/
+	transform: translateX(0px);
+}
+.portfolio .portfolio-item .portfolio-info .icon .fa{
+	line-height: 40px;
+}
+/*UNIQUE*/
+/*Lightbox*/
+.lightbox{
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0.6);
+	z-index: 100;
+	display: none;
+	-ms-flex-align: center;
+	align-items: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	cursor: zoom-out;
+	padding: 30px;
+}
+.lightbox.open{              /*Open When clicked*/
+	display: -ms-flexbox;
+	display: flex;
+}
+
+.lightbox .lightbox-content img{
+	height: auto;
+	width: auto;
+	max-width: 100%;
+	max-height: 500px;      /*Total Img height*/
+	cursor: pointer;
+	display: block;
+	padding: 40px 0 30px; 
+}
+.lightbox .lightbox-content{
+	position: relative;
+
+}
+
+/*Unique hover like animation of Portfolio viewing image*/
+.lightbox.open .lightbox-content{
+	animation: lightboxImage .5s ease;     /*Image kaa unique hover*/
+}
+@-webkit-keyframes lightboxImage{
+	0%{
+		-webkit-transform: scale(0.8);
+		transform: scale(0.8);
+	} 
+	100%{
+		-webkit-transform: scale(1);
+		transform: scale(1);
+	}
+}
+@keyframes lightboxImage{
+	0%{
+		-webkit-transform: scale(0.8);
+		transform: scale(0.8);
+	} 
+	100%{
+		-webkit-transform: scale(1);
+		transform: scale(1);
+	}
+}
+/*END Unique hover like animation of Portfolio viewing image END*/
+
+.lightbox .lightbox-content .lightbox-close{
+	position: absolute;
+	height: 40px;
+	width: 40px;
+	top: 0;
+	right: 0px;     /*Move completely towards right*/
+	font-size: 32px;
+	text-align: right;
+	color: #ffffff;
+	line-height: 40px;
+}
+.lightbox .lightbox-content .lightbox-caption{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	display: -ms-flex;
+	display: flex;
+	-ms-flex-pack: space-between;
+	justify-content: space-between;
+	font-size: 16px;
+	color: #ffffff;
+	font-weight: 400;
+}
+
+.lightbox .lightbox-controls .prev-item,
+.lightbox .lightbox-controls .next-item{
+	position: absolute;
+	height: 40px;
+	width: 40px;
+	background-color: #ffffff;
+	text-align: center;
+	border-radius: 50%;
+	cursor: pointer;
+	top:50%
+	margin-top: -20px;
+	z-index: 110;
+}
+
+.lightbox .lightbox-controls .prev-item:hover,
+.lightbox .lightbox-controls .next-item:hover{
+	-webkit-transform: scale(1.1);            /*Unique Hover*/
+	transform: scale(1.1);
+}
+.lightbox .lightbox-controls .prev-item:active,
+.lightbox .lightbox-controls .next-item:active{
+	-webkit-transform: scale(1);            
+}
+.lightbox .lightbox-controls .prev-item{
+	left: 30px;
+}
+.lightbox .lightbox-controls .next-item{
+	right: 30px;
+}
+.lightbox .lightbox-controls .prev-item .fa,
+.lightbox .lightbox-controls .next-item .fa{
+	font-size: 32px;
+	line-height: 40px;  
+	-webkit-transition: all 0.3s ease;
+	transition: all 0.3s ease;
+}
+
+/*(Navbar-hover) & (About title span of Web Developer in Pink & Services Logos) & (Portfolio Headers) & (Portfolio search fa icons) & (Portfolio Item Indicators) & (Blog ka Tags ka colour) & (Contact fa icons)*/
+.nav li a:hover,  
+.nav li a.active,
+body.dark .nav li a:hover,          /*This 2 line for Dark Aside Nav*/
+body.dark .nav li a.active,         /*Same as above*/
+.dropbtn:hover,
+.fa-list:hover,
+.portfolio .portfolio-filter button.active,     /*For Porfolio filter word wasnt coming in prefrered color*/
+ body.dark .portfolio .portfolio-filter button.active,
+.portfolio .portfolio-item .portfolio-info .icon .fa,
+.lightbox .lightbox-controls .prev-item .fa,
+.lightbox .lightbox-controls .next-item .fa{
+	color: #ec1839;
+}
+
+/*(Nav-Toggler) & (Social-Link) & (btn) & (Progress-in bar Amount of %) & (Unique Timeline Line) & (Circle Dot on TImeline Line) & (Services Icons ka Unique Hover) & (Blog DATE ka background)*/
+.aside .nav-toggler span{
+	background-color: #ec1839;
+}
+.nav-toggler span::before,
+.nav-toggler span::after,
+.section-title h2::before,
+.section-title h2::after, .btn,
+.dropdown-content a:hover{
+	background-color: #ec1839;
+}
+.portfolio .portfolio-filter button.active{
+	border-color: #ec1839;
+}
+
+/*Dark Body*/
+body.dark .section{
+	background-color: #151515;
+}
+body.dark .footer{
+	background-color: #222222;
+}
+
+/*Borders*/
+body.dark .portfolio .portfolio-item-inner{
+	border-color: #393939;
+}
+
+/*Headings*/
+body.dark .logo a,
+body.dark .nav li a,
+body.dark .dropbtn,
+body.dark .dropdown-content a,
+body.dark .section-title h2,
+body.dark .col-2 h1,
+body.dark .portfolio .portfolio-filter button{
+	color: #ffffff;
+}
+/*p text*/
+body.dark .col-2 p{
+	color: #e9e9e9; /*p are slightly grey here*/
+}
+/*No shadow dark borders coz no need*/
+body.dark .shadow-dark{
+	-webkit-box-shadow:none;
+	box-shadow: none;
+}
+
+
+/*Assignments Section End*/
+.footer{
+	background-color: black;
+	color: #8a8a8a;
+	font-size: 14px;
+	padding: 60px 0 20px;
+	height: 35%;
+}
+.footer p{
+	color: #8a8a8a;
+}
+.footer h3{
+	color: whitesmoke;
+}
+.footer-col-1,.footer-col-2, .footer-col-3, .footer-col-4{
+	min-width: 250px;
+	margin-bottom: 20px;
+}
+.footer-col-1{
+	flex-basis: 30%;
+}
+.footer-col-2{
+	flex:1;
+	text-align:center;
+}
+.footer-col-2 img{
+	width: 250px;
+	margin-bottom: 20px;
+}
+.footer-col-3, .footer-col-4{
+	flex-basis: 12%;
+	text-align:center;
+}
+ul{
+	list-style: none;
+}
+.footer hr{
+	border:none;
+	background: #b5b5b5;
+	height: 1px;
+	margin: 20px 0;
+}
+.copyright{
+	text-align: center;
+}
+
+
+

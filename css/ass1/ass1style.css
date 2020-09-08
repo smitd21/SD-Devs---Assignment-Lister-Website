@@ -1,0 +1,309 @@
+
+/*Font Awesome free icons*/
+@import url("https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+/*Google Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@500;700;900&display=swap');
+/*Google Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+
+*{
+	margin:0;
+	box-sizing: border-box;
+	outline: none;
+}
+body{
+	margin: 0;
+	line-height: 1.5;
+	font-size: 16px;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 400;
+	background-color:  #f2f2fc;
+}
+.navbar{
+	display: flex;
+	align-items: center;
+	padding: 20px;
+}
+nav{
+	flex: 1;
+	text-align: right;
+}
+nav ul{
+	display: inline-block;
+	list-style: none;
+}
+nav ul li{
+	display: inline-block;
+	margin-right: 20px;
+}
+.nav li a{
+	font-size: 16px;
+	font-weight: 600;
+	color: #302e4d;
+	text-decoration: none;
+	line-height: 45px;
+	display: block;
+	border-bottom: 1px solid #e8dfec;
+	--webkit-transition: all 0.3s ease;   /*Hovering Effect*/
+	transition: all 0.3s ease;
+	text-transform: capitalize;
+}
+.nav li a:not(.active):hover{
+	padding-left: 5px;  /*It'll pad or move right thoda while hovered*/
+}
+.nav li a .fa{
+	margin-right: 5px;
+}
+
+.shadow-dark{          /*Image ke circle ke baahr shadow*/
+	-webkit-box-shadow:0 0 20px rgba(48,46,77,0.15);
+	box-shadow: 0 0 20px rgba(48,46,77,0.15);
+}
+
+/* Dropdown Button */
+.dropbtn{
+  color: #302e4d;
+  padding: auto 16px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  color: #302e4d;
+  text-decoration: none;
+  line-height: 45px;
+  display: block;
+  border-bottom: 1px solid #e8dfec;
+  --webkit-transition: all 0.3s ease;   /*Hovering Effect*/
+  transition: all 0.3s ease;
+  text-transform: capitalize;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+.fa-list{
+	margin-right: 5px;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: whitesmoke
+  min-width: 160px;
+  box-shadow: #5F9EA0;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color:  #302e4d;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  border-radius: 30px;
+}
+
+.dropdown-content a:hover {color: #ffffff;}
+
+
+.dropdown:hover .dropdown-content {display: block;padding-top: 5px;}
+
+
+.dropdown:hover .dropbtn {background-color:transparent;}
+
+
+
+/*Highlighting & Hovering in Pink*/
+.logo{
+	padding: 30px 0;
+}
+.logo a{
+	font-size: 40px;
+	color: #302e4d;;
+	font-family: 'Rubik', sans-serif;
+	font-weight: 700;
+	text-decoration: none;
+	display: inline-block;
+	position: relative;
+	padding: 0 10px;
+	line-height: 50px;
+}
+
+.logo a::before{
+	border-top: 4px solid #ec1839;
+	border-left: 4px solid #ec1839;
+} 
+.logo a::after{
+	border-right: 4px solid #ec1839;
+	border-bottom: 4px solid #ec1839;
+}
+.container{
+	max-width: 1300px;
+	margin: auto;
+	padding-left: 25px;
+	padding-right: 25px;
+
+}
+.row{
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+.col-2{
+	flex-basis: 50%;
+	min-width: 300px;
+}
+.col-2 img{
+	max-width: 100%;
+	padding: 50px 0;
+}
+.col-2 h1{
+	font-size: 50px;
+	line-height: 60px;
+	margin: 25px 0;
+	color:  #302e4d;
+}
+.header{
+	background-color: #f2f2fc;
+}
+.header .row{
+	margin-top: 70px;
+}
+
+
+::before,::after{
+	box-sizing: border-box;
+}
+
+.logo a::before{
+	content: '';
+	height: 20px;
+	width: 20px;
+	position: absolute; 
+	top: 0;
+	left: 0;
+}
+
+.logo a::after{
+	content: '';
+	height: 20px;
+	width: 20px;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+}
+
+.section{
+	background-color:  #f2f2fc;
+	display: block;
+	z-index: 0;
+	opacity: 1;
+	-webkit-transition: all 0.3s ease;     /*Transition will be done 0.3s*/
+	transition: all 0.3s ease;
+}
+.section .container{
+	padding-top: 60px;
+	padding-bottom: 70px;
+}
+.section-title{
+	-ms-flex: 0 0 100%;
+	flex: 0 0 100%;
+	max-width: 100%;
+	margin-bottom: 60px;
+}
+.section-title h2{
+	font-size: 40px;
+	color: #302e4d;
+	font-family: 'Rubik', sans-serif;
+	font-weight: 700;
+	margin: 0;
+	/*background-color: gray;*/
+	position: relative;
+}
+.section-title h2::before{
+	content: '';
+	height: 4px;
+	width: 50px;
+	position: absolute;
+	top: 100%;
+	left: 0;
+}
+.section-title h2::after{
+	content: '';
+	height: 4px;
+	width: 25px;
+	position: absolute;
+	top: 100%;
+	left: 0;
+	margin-top: 8px;
+}
+.row{
+	display: -ms-flex;
+	display: flex;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	margin-right: -15px;
+	margin-left: -15px;
+}
+.shadow-dark{          /*Image ke circle ke baahr shadow*/
+	-webkit-box-shadow:0 0 20px rgba(48,46,77,0.15);
+	box-shadow: 0 0 20px rgba(48,46,77,0.15);
+}
+.btn{                           /*Unique Whole button*/        
+	font-size: 16px;
+	font-family: 'Rubik', sans-serif;
+	padding: 8px 30px;
+	margin: 30px 0;
+	font-weight: 500;
+	padding: 12px 35px;
+	color: #ffffff;
+	border-radius: 40px;
+	-webkit-transition: all 0.3s ease; /*Hovering Effect*/
+	transition: all 0.3s ease;
+	display: inline-block;
+	white-space: nowrap;
+	border: none;
+	cursor: pointer;
+}
+.btn:hover{
+	-webkit-transform: scale(1.05);       /*Unique Hover*/
+	transform: scale(1.05);
+}
+
+.resume-start{
+	margin-top: 30px;
+}
+
+/*(Navbar-hover) & (About title span of Web Developer in Pink & Services Logos) & (Portfolio Headers) & (Portfolio search fa icons) & (Portfolio Item Indicators) & (Blog ka Tags ka colour) & (Contact fa icons)*/
+.nav li a:hover,  
+.nav li a.active,
+body.dark .nav li a:hover,          /*This 2 line for Dark Aside Nav*/
+body.dark .nav li a.active,         /*Same as above*/
+.dropbtn:hover,
+.fa-list:hover,
+.portfolio .portfolio-filter button.active,     /*For Porfolio filter word wasnt coming in prefrered color*/
+ body.dark .portfolio .portfolio-filter button.active,
+.portfolio .portfolio-item .portfolio-info .icon .fa,
+.lightbox .lightbox-controls .prev-item .fa,
+.lightbox .lightbox-controls .next-item .fa{
+	color: #ec1839;
+}
+
+/*(Nav-Toggler) & (Social-Link) & (btn) & (Progress-in bar Amount of %) & (Unique Timeline Line) & (Circle Dot on TImeline Line) & (Services Icons ka Unique Hover) & (Blog DATE ka background)*/
+.aside .nav-toggler span{
+	background-color: #ec1839;
+}
+.nav-toggler span::before,
+.nav-toggler span::after,
+.section-title h2::before,
+.section-title h2::after, .btn,
+.dropdown-content a:hover{
+	background-color: #ec1839;
+}
+.portfolio .portfolio-filter button.active{
+	border-color: #ec1839;
+}
+

@@ -1,0 +1,211 @@
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&family=Roboto:wght@300&display=swap');
+</style>
+
+*
+{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body
+{
+	background: linear-gradient(to right, #b3e5fc , #ffccbc, #c8e6c9);
+	border: solid red 1.5px;
+	color: black;
+	font-family: 'Roboto Mono', monospace;
+	font-size: 17px;
+}
+
+
+#svg-background
+{
+	position: fixed;
+	width: 100vw;
+	height: 100vh;
+	z-index: -1;
+}
+
+#mu-logo
+{
+	height: 10vh;
+	position: absolute;
+	left: 2%;
+	top: 3%;
+}
+
+#mu-logo-watermark-wrapper
+{
+	display: grid;
+	place-content: center;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+}
+
+#mu-logo-watermark
+{
+	opacity: 0.1;
+	height: 40vh;
+}
+
+
+main
+{
+	display: flex;
+	flex-direction: column;
+}
+h1
+{
+	font-family: "Old English", "Times New Roman", Times, serif;
+	font-weight: 100;
+	font-size: 25px;
+	padding: 0.5%;
+}
+
+h2
+{
+	font-family: "Times New Roman", Times, serif;
+}
+
+h1, h2
+{
+	color: #e60105;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.student-data
+{
+	padding-top: 2%;
+	display: grid;
+	width: 90%;
+	margin: auto;
+	grid-template-columns: max-content 1fr;
+	column-gap: 1.5rem;
+}
+
+label
+{
+	color: #e60105;
+	font-family: "Times New Roman", Times, serif;
+	font-size: 20px;
+	padding: 0.5% 0;
+}
+
+.student-data > label
+{
+	position: relative;
+}
+
+.student-data > label::after
+{
+	content: ":";
+	position: absolute;
+	right: -15px;
+}
+
+.student-data > div
+{
+	line-height: 1.5em;
+}
+
+section
+{
+	padding-top: 2%;
+}
+
+table
+{
+	border-collapse: collapse;
+	width: 100%;
+}
+
+th
+{
+	font-family: "Times New Roman", Times, serif;
+}
+
+td, th
+{
+	border: solid #e60105 2px;
+}
+
+td, th
+{
+	padding: 0.5% 0.5%;
+}
+
+th
+{
+	color: #e60105;
+}
+
+.no-bottom-top-border
+{
+	border-bottom: none;
+	border-top: none;
+}
+
+.no-right-border
+{
+	border-right: none;
+}
+
+.no-left-border
+{
+	border-left: none;
+}
+
+#total-row
+{
+	text-align: right;
+	color: #e60105;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.serif-fonts
+{
+	font-family: "Times New Roman", Times, serif;
+}
+
+.end-section
+{
+	display: flex;
+	flex-direction: column;
+}
+
+.end-section-data
+{
+	display: flex;
+}
+
+.end-data-set
+{
+	display: flex;
+	align-items: baseline;
+	padding: 0.3% 0.5%;
+	flex: 0.33;
+}
+
+.salutation-outer
+{
+	padding: 2% 1%;
+	display: flex;
+	justify-content: flex-end;
+}
+
+.salutation-inner
+{
+	color: #e60105;
+	font-family: "Times New Roman", Times, serif;
+	font-style: italic;
+	font-size: 20px;
+	font-weight: bold;
+	text-align: center;
+}
